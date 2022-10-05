@@ -1,0 +1,137 @@
+2.21
+
+    printf("*********         ***           *           *     \n");
+    printf("*       *      *       *       ***         * *    \n");
+    printf("*       *     *         *     *****       *   *   \n");
+    printf("*       *     *         *       *        *     *  \n");
+    printf("*       *     *         *       *       *       * \n");
+    printf("*       *     *         *       *        *     *  \n");
+    printf("*       *     *         *       *         *   *   \n");
+    printf("*       *      *       *        *          * *    \n");
+    printf("*********         ***           *           *       ");
+
+2.23
+
+    int a=0;
+    int b=0;
+    int c=0;
+    int m=0;
+    int s=0;
+    scanf("%d\t%d\t%d", &a,&b,&c);
+    m=a;
+ if(b>m) 
+   m=b;
+ if(c>m)
+   m=c; 
+   s=a;
+ if(b<s) 
+   s=b;
+ if(c<s) 
+   s=c;
+    
+    printf("最大值=");
+    printf("%d\n",m);
+    printf("最小值=");
+    printf("%d",s);
+    return 0;
+
+2.24
+
+    int a;
+    printf("請輸入一個整數:\t");
+    scanf("%d", &a);
+    if(a%2==0)
+    printf("even");
+    else 
+    printf("odd");
+    return 0;
+
+
+
+2.25
+
+    printf("PPPPPPPPP\n");
+    printf("    P   P\n");
+    printf("    P   P\n");
+    printf("    P   P\n");
+    printf("     P P \n\n");
+    printf("  JJ     \n");
+    printf(" J       \n");
+    printf("J        \n");
+    printf(" J       \n");
+    printf("  JJJJJJJ \n\n");
+    printf("DDDDDDDDD\n");
+    printf("D       D\n");
+    printf("D       D\n");
+    printf(" D     D \n");
+    printf("  DDDDD  \n");
+    return 0;
+
+2.26
+
+    int a,b,c,d;
+    printf("請輸入兩個整數:\t");
+    scanf("%d\t%d", &a,&b);
+    c=a/b;
+    d=a%b;
+    printf("%d",a);
+    printf("是否為");
+    printf("%d",b);
+    printf("的倍數: ");
+    if (c>=1 && d==0)
+    {
+   printf("是");
+    }
+   else
+   printf("否");
+
+
+2.27
+
+    printf("    *\n");
+    printf("   ***\n");
+    printf("  *****\n");
+    printf(" *******\n");
+    printf("*********" );
+
+2.31
+
+    int a ;
+    printf("number\tsquare\tcube\n");
+    for(a=0;a<11;a++)
+    {
+    printf("%d\t%d\t%d\n",a,(a*a),(a*a*a));
+    }
+
+2.32
+
+    float w;
+    float h;
+    float BMI;
+    printf("請輸入體重(kg)、身高(m)");
+    scanf("%f\t%f", &w,&h);
+    BMI=w/(h*h);
+    printf("BMI=\t");
+    printf("%f\n",BMI);
+    
+    printf("BMI VALUES\nUnderweight: less than 18.5\nNormal:      between 18.5 and 24.9\n");
+    printf("Overweight:  between 25 and 29.9\nObese:       30 or greater");
+    return 0;
+
+2.33
+
+    int a,b,c,d,e,f,g;
+    printf("請輸入一整天的總里程數: ");
+    scanf("%d\n", &a);
+    printf("請輸入汽油一公升/錢: ");
+    scanf("%d\n", &b);
+    printf("請輸入平均一公升/行駛多少公里: ");
+    scanf("%d\n", &c);
+    printf("請輸入一天的停車費: ");
+    scanf("%d\n", &d);
+    printf("請輸入一天的通行費(過路費): ");
+    scanf("%d\n", &e);
+    f=(a/c)*b;
+    g=f+d+e;
+    printf("一天下來開車去工作的花費: ");
+    printf("%d",g);
